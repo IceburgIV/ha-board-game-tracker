@@ -1,0 +1,26 @@
+{
+  "title": "Trouble Championship",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Create a Trouble championship",
+        "description": "Enter the five player names. The game log and every statistic are stored locally in Home Assistant.",
+        "data": {
+          "championship_name": "Championship name",
+          "player_1": "Player 1",
+          "player_2": "Player 2",
+          "player_3": "Player 3",
+          "player_4": "Player 4",
+          "player_5": "Player 5"
+        }
+      }
+    },
+    "error": {
+      "duplicate_players": "Every player name must be unique.",
+      "empty_player": "Player names cannot be blank."
+    },
+    "abort": {
+      "already_configured": "A championship with this name already exists."
+    }
+  }
+}

@@ -1,0 +1,12 @@
+# Add this at the ROOT level of configuration.yaml.
+# If panel_custom: already exists, add only the list item beneath it.
+
+panel_custom:
+  - name: trouble-championship-panel
+    url_path: trouble-arcade
+    sidebar_title: Trouble Arcade
+    sidebar_icon: mdi:dice-5
+    module_url: /local/trouble-championship-panel.js?v=4.0.0
+    config:
+      prefix: trouble_championship
+      title: TROUBLE CHAMPIONSHIP
