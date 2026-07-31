@@ -1,13 +1,15 @@
 # Changelog
 
-## v4.0.0
+## 5.1.2
 
-Initial public release
+- Restore storage compatibility with existing Rev 3/4 event logs.
+- Keep Home Assistant storage major version at `1`; no migration is required.
+- Add Git-ready deployment and update scripts.
+- Add HACS metadata and repository links.
+- Preserve the v5.1 recording confirmation and duplicate protection.
 
-- Arcade panel
-- Live podium
-- Standings
-- Head-to-head tracking
-- Daily game history
-- Confetti
-- Undo
+## 5.1.0
+
+- Add two-step recording confirmation.
+- Add backend duplicate protection.
+- Add record-anyway override.

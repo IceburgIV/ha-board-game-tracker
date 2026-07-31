@@ -4,7 +4,7 @@
     "step": {
       "user": {
         "title": "Create a Trouble championship",
-        "description": "Enter the five player names. The game log and every statistic are stored locally in Home Assistant.",
+        "description": "Enter the initial five players. Add more from the arcade panel.",
         "data": {
           "championship_name": "Championship name",
           "player_1": "Player 1",
