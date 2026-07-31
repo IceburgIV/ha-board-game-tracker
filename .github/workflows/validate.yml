@@ -1,0 +1,25 @@
+name: Validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Compile Python
+        run: python -m compileall -q custom_components/trouble_championship
+      - name: Validate frontend JavaScript
+        run: node --check custom_components/trouble_championship/frontend/trouble-league-panel.js
+      - name: Validate JSON
+        run: |
+          python -m json.tool custom_components/trouble_championship/manifest.json >/dev/null
+          python -m json.tool hacs.json >/dev/null
